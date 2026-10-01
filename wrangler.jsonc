@@ -1,0 +1,8 @@
+{
+  "name": "robot-voice-room",
+  "main": "src.js",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/ws"] },
+  "durable_objects": { "bindings": [{ "name": "ROOMS", "class_name": "VoiceRoom" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["VoiceRoom"] }]
+}
