@@ -2,6 +2,10 @@
   "name": "robot-voice-room",
   "main": "src.js",
   "compatibility_date": "2026-09-01",
+"vars": {
+  "VAPID_PUBLIC_KEY": "BLpGSQf3kuXZ942_nWhT6xilHpDRTpzXUxINxmuB32eQ7WVf3gu99qHa8q_HdJ5-RkghqlKlbSX6tRAuQ6T3yH0",
+  "VAPID_SUBJECT": "mailto: wings23@naver.com"
+},
   "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/ws"] },
   "durable_objects": { "bindings": [{ "name": "ROOMS", "class_name": "VoiceRoom" }] },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["VoiceRoom"] }]
